@@ -1,4 +1,0 @@
-.pytest_cache
-.idea
-data/raw/train.csv
-ml_project/test/.pytest_cache
