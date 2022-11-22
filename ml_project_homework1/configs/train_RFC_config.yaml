@@ -1,0 +1,41 @@
+input_data_path: "/data/raw/train.csv"
+output_model_path: "/models/model.pkl"
+metric_path: "/models/metrics.json"
+downloading_params:
+  s3_bucket: ml-in-prod-technopark
+  paths:
+    - train.csv
+  output_folder: "/data/raw"
+splitting_params:
+  val_size: 0.2
+  random_state: 13
+train_params:
+  model_type: "RandomForestClassifier"
+  model_RFC_params:
+    random_state: 13
+    n_estimators: 50
+    max_depth: 5
+feature_params:
+  categorical_features:
+    - 'sex'
+    - 'cp'
+    - 'fbs'
+    - 'restecg'
+    - 'exang'
+    - 'slope'
+    - 'ca'
+    - 'thal'
+  numerical_features:
+    - 'oldpeak'
+    - 'age'
+    - 'chol'
+    - 'thalach'
+    - 'trestbps'
+  features_to_drop:
+    - 'index'
+  target_col: "condition"
+metric_params:
+    accuracy: True
+    precision: True
+    recall: True
+    f_1: True
