@@ -1,10 +1,2 @@
-.pytest_cache
-.idea
-online_inference/.__pycacha__
-online_inference/.env
-online_inference/__pycacha__
-online_inference/env
-ml_project_homework1/.pytest_cache
-ml_project_homework1/.idea
-ml_project_homework1/data/raw/train.csv
-ml_project_homework1/ml_project/test/.pytest_cache
+/__pycache__
+__pycache__
