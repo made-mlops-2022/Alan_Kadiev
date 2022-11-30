@@ -1,0 +1,4 @@
+input_data_path: "/data/raw/test.csv"
+model_path: "/models/model.pkl"
+transformer_path: "/models/transformer.pkl"
+prediction_path: "/outputs/prediction.csv"
