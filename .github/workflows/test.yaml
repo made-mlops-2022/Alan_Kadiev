@@ -26,4 +26,4 @@ jobs:
             pip install -r requirements.txt
             python -m pip install -e .
       - name: Test with pytest
-        run: pytest ml_project/test
+        run: pytest ml_project_homework1/test
