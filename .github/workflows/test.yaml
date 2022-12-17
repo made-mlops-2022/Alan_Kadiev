@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    branches: [ homework1 ]
+    branches: [ homework2 ]
   pull_request:
     branches: [ main ]
 
@@ -25,5 +25,3 @@ jobs:
             python -m pip install pytest
             pip install -r requirements.txt
             python -m pip install -e .
-      - name: Test with pytest
-        run: pytest ml_project_homework1/test
