@@ -1,8 +1,5 @@
 .pytest_cache
 .idea
-online_inference/.__pycacha__
-online_inference/.env
-online_inference/__pycacha__
 online_inference/env
 ml_project_homework1/.pytest_cache
 ml_project_homework1/.idea
